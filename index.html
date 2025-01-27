@@ -47,8 +47,8 @@
     <div class="carousel">
         <div class="carousel-images" id="carouselImages">
             <img src="image1.jpg" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2" id="linkImage">
-            <img src="image3.jpg" alt="Image 3">
+            <img src="image2.jpg" alt="Image 2" id="linkImage2">
+            <img src="image3.jpg" alt="Image 3" id="linkImage3">
             <img src="image4.jpg" alt="Image 4">
             <img src="image5.jpg" alt="Image 5">
             <img src="image6.jpg" alt="Image 6">
@@ -63,9 +63,14 @@
         let startY = 0;
         let endY = 0;
 
-        const linkImage = document.getElementById('linkImage');
-        linkImage.addEventListener('click', () => {
+        const linkImage2 = document.getElementById('linkImage2');
+        linkImage2.addEventListener('click', () => {
             window.open('https://maps.app.goo.gl/Gu6stxp3mjNdqi5r5', '_blank');
+        });
+
+        const linkImage3 = document.getElementById('linkImage3');
+        linkImage3.addEventListener('click', () => {
+            window.open('https://forms.gle/6qChZiKLoh6YYHwg6', '_blank');
         });
 
         function handleScroll(event) {
